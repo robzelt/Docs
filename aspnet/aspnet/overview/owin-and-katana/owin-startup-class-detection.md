@@ -26,7 +26,7 @@ by [Praburaj Thiagarajan](https://github.com/Praburaj), [Rick Anderson](https://
 
 ## OWIN Startup Class Detection
 
- Every OWIN Application has a startup class where you specify components for the application pipeline. There are different ways you can connect your startup class with the runtime, depending on the hosting model you choose (OwinHost, IIS, and IIS-Express). The startup class shown in this tutorial can be used in every hosting application. You connect the startup class with the hosting runtime using one of the these approaches:  
+ Every OWIN Application has a startup class where you specify components for the application pipeline. There are different ways you can connect your startup class with the runtime, depending on the hosting model you choose (OwinHost, IIS, and IIS-Express). The startup class shown in this tutorial can be used in every hosting application. You connect the startup class with the hosting runtime using one of these approaches:  
 
 1. **Naming Convention**: Katana looks for a class named `Startup` in namespace matching the assembly name or the global namespace.
 2. **OwinStartup Attribute**: This is the approach most developers will take to specify the startup class. The following attribute will set the startup class to the `TestStartup` class in the `StartupDemo` namespace. 
